@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Loader } from "lucide-react";
+import { Toaster } from "react-hot-toast";
 
 import Navbar from "./components/Navbar";
 
@@ -29,7 +30,7 @@ function App() {
     );
 
   return (
-    <div className="p-4 h-screen flex items-center justify-center">
+    <div>
       <Navbar />
       <Routes>
         <Route
@@ -50,6 +51,7 @@ function App() {
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
         />
       </Routes>
+      <Toaster />
     </div>
   );
 }
