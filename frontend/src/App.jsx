@@ -49,7 +49,17 @@ function App() {
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
         />
       </Routes>
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          className: "app-toast",
+          success: {
+            className: "app-toast app-toast-success",
+          },
+          error: {
+            className: "app-toast app-toast-error",
+          },
+        }}
+      />
     </div>
   );
 }
