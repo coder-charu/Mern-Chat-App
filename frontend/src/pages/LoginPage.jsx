@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { useAuth } from "../zustand/useAuth.js";
 import { Link } from "react-router-dom";
-import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
+import {
+  Eye,
+  EyeOff,
+  Loader2,
+  Lock,
+  Mail,
+  MessageSquareHeart,
+} from "lucide-react";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -29,11 +36,13 @@ const LoginPage = () => {
             {/* logo */}
             <div className="text-center space-y-2">
               <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#833AB4] via-[#E1306C] to-[#F77737] shadow-lg shadow-pink-500/30 ring-1 ring-white/20">
-                <MessageSquare className="size-6 text-white" />
+                <MessageSquareHeart className="size-6 text-white" />
               </div>
 
               <h1 className="text-3xl font-bold text-white">Welcome Back</h1>
-              <p className="text-sm text-white/60">Sign in to your account </p>
+              <p className="text-sm text-white/60">
+                Your people are just one login away.
+              </p>
             </div>
 
             {/* email */}
@@ -99,7 +108,7 @@ const LoginPage = () => {
                 Don&apos;t have an account?
                 <Link
                   to="/signup"
-                  className="font-semibold text-white underline underline-offset-4 transition hover:text-pink-200"
+                  className="font-semibold text-white underline underline-offset-4 transition hover:text-pink-200 p-1"
                 >
                   Sign Up
                 </Link>

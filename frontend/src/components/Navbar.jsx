@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../zustand/useAuth.js";
-import { LogOut, MessageSquare, Settings, User } from "lucide-react";
+import { LogOut, Settings, User, MessageSquareHeart } from "lucide-react";
 
 const Navbar = () => {
   const { logout, authUser } = useAuth();
@@ -15,10 +15,12 @@ const Navbar = () => {
               className="flex items-center gap-2.5 hover:opacity-80 transition-all"
             >
               <div className="flex size-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#833AB4] via-[#E1306C] to-[#F77737] shadow-lg">
-                <MessageSquare className="size-5 text-white" />
+                <MessageSquareHeart className="size-5 text-white" />
               </div>
 
-              <h1 className="text-xl font-bold text-white">Convoo</h1>
+              <h1 className="text-2xl font-bold niconne-regular text-white">
+                Convoo
+              </h1>
             </Link>
           </div>
 

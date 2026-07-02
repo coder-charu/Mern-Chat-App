@@ -6,7 +6,7 @@ import {
   Loader2,
   Lock,
   Mail,
-  MessageSquare,
+  MessageSquareHeart,
   User,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -54,12 +54,12 @@ const SignupPage = () => {
             {/* logo */}
             <div className="text-center space-y-2">
               <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#833AB4] via-[#E1306C] to-[#F77737] shadow-lg shadow-pink-500/30 ring-1 ring-white/20">
-                <MessageSquare className="size-6 text-white" />
+                <MessageSquareHeart className="size-6 text-white" />
               </div>
 
               <h1 className="text-3xl font-bold text-white">Create Account</h1>
               <p className="text-sm text-white/60">
-                Join the conversation in seconds
+                A cozy place to talk, laugh, and stay connected.{" "}
               </p>
             </div>
             {/* fullname */}

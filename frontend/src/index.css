@@ -18,3 +18,9 @@
 .app-toast-error {
   border-color: rgba(225, 48, 108, 0.55) !important;
 }
+
+.niconne-regular {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
