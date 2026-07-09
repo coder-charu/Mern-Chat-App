@@ -26,9 +26,9 @@ app.use(
 
 // endpoints
 app.use("/api/auth", authRoutes);
-app.use("/api/message", messageRoutes);
+app.use("/api/messages", messageRoutes);
 
-app.listen(PORT, () => {
-  connectToMongoDB();
+app.listen(PORT, async () => {
+  await connectToMongoDB();
   console.log(`Server is running on port ${PORT}`);
 });
